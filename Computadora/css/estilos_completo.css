@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 4.5rem;
+}
+
+.terraol{
+    text-align: left;
+}
+
+h1, h2, h3 {
+    padding: 1%;
+}
+
+h1 {
+    font-weight: 700;
+    padding: 0;
+}
+
+h2 {
+    height: 4rem;
+    text-align: center;
+}
+
+ol{
+    list-style-type: disc;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 0.5%;
+}
+
+
+header{
+    text-align: center;
+    width: 100%;
+    top: 0;
+}
+
+article {
+    padding: 2%;
+    margin: 2%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+p {
+    margin: 1% 0%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 45% 45%;    
+    justify-content: space-around;
+}
+
+
+footer {
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 4.5rem;
+}
+
+img{
+    width: 70%;
+    height: auto;
+}
+
+
+.topright{
+    text-align: right;
+    margin-right: 1%;
+    margin-top: 0;
+}
+
+.menu, a {
+    text-decoration: none;
+}
+
+.enlace:hover{
+    background-color: #434343;
+}

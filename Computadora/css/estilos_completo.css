@@ -44,6 +44,41 @@ li {
     margin: 0.5%;
 }
 
+.menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+.menu > li > a{
+    display: block;
+    text-decoration: none;
+}
+
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: black;
+}
+
+.menu-vertical li a{
+    display: block;
+}
+
+.menu-vertical li:hover{
+    background-color: rgb(238, 140, 12);
+}
+
+.menu-vertical li a{
+    display: block;
+    color: white;
+}
+
+.menu li:hover .menu-vertical{
+    display: block;
+}
 
 header{
     text-align: center;
@@ -98,4 +133,234 @@ img{
 
 .enlace:hover{
     background-color: #434343;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid black;
+    
+}
+  th,  td {
+    padding: 10px;
+    border: 3px solid black;
+}
+
+iframe{
+    width: 100%;
+    height: 400px;
+    border: 0px;
+}
+
+.logoFijo {
+    margin: 1%;
+    width: 5rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 2%;
+    z-index: 20;    
+    border-radius: 50%;
+}
+
+
+.diablo3{
+    background-image: url(../imgprueba/diablo3.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+}
+
+.pubg{
+    background-image: url(../imgprueba/pubg1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+
+}
+
+.minecraft{
+    background-image: url(../imgprueba/Minecraft.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    
+}
+
+.rust{
+    background-image: url(../imgprueba/rust1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    
+}
+
+.terraria{
+    background-image: url(../imgprueba/terraria1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+    
+}
+
+
+.witcher{
+    background-image: url(../imgprueba/witcher1.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    background-attachment: fixed;
+}
+
+
+
+@media only screen and (max-width: 600px){
+     header > h2{
+     display: inline;
+     font-size: 1rem;
+    }
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    main{
+     display: flex;
+     flex-direction: column;
+     text-align: left;
+     width: 100%;
+    } 
+
+    article{
+        width: 100%;
+        margin: 0;
+    }
+
+    .diablo3{
+        display: none;
+    }
+
+    .pubg{
+        display: none;
+    }
+
+    .minecraft{
+        display: none;
+    }
+
+    .rust{
+        display: none;
+    }
+
+    .terraria{
+        display: none;
+    }
+
+    .witcher{
+        display: none;
+    }
+
+   img{
+    width: 100%;
+    height: auto;
+   }
+
+   .logoFijo{
+    width: 10%;
+   }
+
+   #segundo{
+    display: none;
+   }
+
+   #enlacePc{
+    display: none;
+   }
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 990px){
+
+    header > h2{
+        display: inline;       
+    }
+
+    
+    img{        
+        width: 50%;
+        height: auto;
+    }
+    
+    article{
+        width: 100%;
+        margin: 0;
+    }
+    .diabloimg{
+        display: none;
+    }
+
+    .minecraftimg{
+        display: none;
+    }
+    .pubgimg{
+        display: none;
+    }
+
+    .imgmrust{
+        display: none;
+    }
+
+    .terrariaimg{
+        display: none;
+    }
+    .witcherimg{
+        display: none;
+    }
+
+    #enlacePc{
+        display: none;
+       }
+    
+}
+
+@media only screen and (min-width: 991px){
+    .minecraftimg{
+        display: none;
+    }
+    .pubgimg{
+        display: none;
+    }
+    
+    .diabloimg{
+        display: none;
+    }
+
+    .imgmrust{
+        display: none;
+    }
+    .terrariaimg{
+        display: none;
+    }
+
+    .witcherimg{
+        display: none;
+    }
+
+    .articulos{
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+    }
+    
+
 }

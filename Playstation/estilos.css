@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family= Poetsen+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sedgwick+Ave+Display&display=swap');
+
+* { 
+   font-family: "Plus Jakarta Sans", sans-serif; 
+   font-optical-sizing: auto; 
+   font-weight: 500; 
+   font-style: normal ;
+   font-variation-settings: "wdth" 100 ;
+}
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    margin: 0;
+    padding: 0;
+    background-color: #7547f4;
+}
+
+header, footer {
+    background-color: #000000; 
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+
+   
+}
+
+header img {
+    margin-right: 80px; 
+}
+
+.contenido {
+    display: flex;
+    flex-direction: column; /* Cambiado a columna para apilar verticalmente los elementos */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+p {
+    margin-top: 10px; 
+    max-width: 900px; 
+    margin-left: auto; 
+    margin-right: auto;
+    text-align: justify;
+}
+nav ul {
+    list-style: none;
+    padding: 4;
+    margin: 2;
+}
+
+nav li {
+    display: inline;
+    margin-right: 100px; /* Ajusta el espaciado entre los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: #4e19c0;
+}
+
+nav a:hover img {
+    filter: brightness(1.4); 
+}
+
+nav a:hover {
+    color: #ffffff; /* Cambia el color al pasar el ratón sobre el enlace */
+}
+
+.imgArticulo img {
+    max-width: 60%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+    max-height: 40px; /* Limita la altura máxima de la imagen */
+    justify-content: space-around;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    background-color: #7547f4;
+}
+
+.grid-item {
+
+    background-color: #000202;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    color: #ccc;
+    border-radius: 30px;
+}
+
+
+.login-link {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.login-link a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+footer p {
+    text-align: center; /* Centra el texto dentro del pie de página */
+}

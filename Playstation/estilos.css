@@ -9,7 +9,6 @@
 }
 
 body {
-    /*font-family: Arial, sans-serif;*/
     margin: 0;
     padding: 0;
     background-color: #7547f4;
@@ -31,7 +30,7 @@ header img {
 
 .contenido {
     display: flex;
-    flex-direction: column; /* Cambiado a columna para apilar verticalmente los elementos */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -53,28 +52,36 @@ nav ul {
 
 nav li {
     display: inline;
-    margin-right: 100px; /* Ajusta el espaciado entre los elementos */
+    margin-right: 100px; 
 }
 
 nav a {
     text-decoration: none;
-    color: #4e19c0;
+    color: #7547f4;
 }
 
+nav a + a {
+    margin-left: 50px; /*espacio entre los enlaces */
+  }
+  
+  nav a:hover {
+    color: #ffffff; /*cambia el color al pasar el ratón por encima */
+  }
+
 nav a:hover img {
-    filter: brightness(1.4); 
+    filter: brightness(1.6); 
 }
 
 nav a:hover {
-    color: #ffffff; /* Cambia el color al pasar el ratón sobre el enlace */
+    color: #ffffff; /*cambia el color al pasar el ratón*/
 }
 
 .imgArticulo img {
-    max-width: 60%; /* Limita el ancho máximo de la imagen al 100% del contenedor */
-    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    display: block; /* Hace que la imagen sea un bloque */
-    margin: 0 auto; /* Centra horizontalmente la imagen */
-    max-height: 40px; /* Limita la altura máxima de la imagen */
+    max-width: 60%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    max-height: 40px; 
     justify-content: space-around;
 }
 
@@ -114,5 +121,14 @@ nav a:hover {
 
 
 footer p {
-    text-align: center; /* Centra el texto dentro del pie de página */
+    text-align: center;
+}
+.logoFijo {
+    margin: 1%;
+    width: 5rem;
+    position: fixed;
+    bottom: 5rem;
+    right: 2%;
+    z-index: 20;    
+    border-radius: 50%;
 }

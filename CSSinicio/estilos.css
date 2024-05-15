@@ -60,7 +60,7 @@ nav a {
 }
 
 .imagen-header:hover {
-    filter: grayscale(0%); /*convertir la imagen de nuevo a color/
+    filter: grayscale(0%); /*convertir la imagen de nuevo a color*/
 }
 
 main {

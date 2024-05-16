@@ -5,13 +5,16 @@
 
 
 .color2{
-    background-color: rgb(138, 133, 133);
+    background-color: #424e5c;;
     color: rgb(212, 210, 210);
 }
 
 .color3{
-    color: black;
+    background-color: #1b2128;;
+    width: 100%;
 }
+
+
 
 .enlace{
     color: rgb(212, 210, 210)
@@ -23,4 +26,8 @@
 
 .th1{
     color: black;
+}
+
+a{
+    color: rgb(212, 210, 210);
 }

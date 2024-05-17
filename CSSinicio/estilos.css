@@ -1,4 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sedgwick+Ave+Display&display=swap');
+
 * {
-    margin: 0;
-    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
 }
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white; 
+    text-align: center;
+    margin: 0;
+}
+
+header {
+    color: rgb(255, 255, 255);
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.topright {
+    text-align: right;
+    margin-right: 3%;
+    margin-block-start: auto;
+    margin-top: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 4;
+    margin: 2;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+nav li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #7547f4;
+    transition: color 0.3s, filter 0.3s; 
+}
+
+nav a:hover {
+    color: white; /*cambia el color del enlace al pasar el mouse*/
+    filter: brightness(1.10); /*brillo al enlace al pasar el mouse*/
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.imagen-header {
+    filter: grayscale(100%); /*convertir imagen a blanco y negro*/
+    transition: filter 0.5s; /*transición*/
+}
+
+.imagen-header:hover {
+    filter: grayscale(0%); /*convertir la imagen de nuevo a color*/
+}
+
+main {
+    text-align: center;
+    margin: 3%;
+    background-color: #909eb4; /* Color de fondo original */
+    border: 3px solid white;
+    padding: 40px;
+    border-radius: 0px 75px 0px 75px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+}
+
+main h1 {
+    padding: 10px;
+    margin: 10px 0; 
+}
+
+main p {
+    margin: 0; 
+}
+
+.iframe-container {
+    background-color: #333;
+    padding: 40px;
+}
+
+iframe {
+    width: 80%;
+    max-width: 695px;
+    height: 391px;
+    display: block;
+    margin: 0 auto;
+}
+
+div {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.login-box, .registro-box {
+    display: inline-block;
+}
+
+.login-box {
+    background-color: #765866;
+    padding: 10px 20px;
+    border-radius: 0px 15px 0px 15px;
+    margin-right: 10px; /* espacio entre los cuadros */
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.registro-box {
+    background-color: #765866;
+    padding: 10px 20px;
+    border-radius: 0px 15px 0px 15px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.login-box a,
+.registro-box a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px; 
+    transition: font-size 0.3s; 
+}
+
+.login-box a:hover,
+.registro-box a:hover {
+    font-size: 18px; /
+    filter: brightness(1.10); 
+}
+
+
+footer {
+    background-color: #765866;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer nav ul li {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+footer nav ul li a {
+    text-decoration: none;
+    color: #d0aab4;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: black;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(/imgprincipal/imgprincipal.png);
+    background-size: cover; /*tamaño de la imagen para cubrir todo el body*/
+    background-position: center;
+    background-repeat: no-repeat; /*para que la imagen no se repita*/
+    background-attachment: fixed; /*imagen fija*/
+}
+
+

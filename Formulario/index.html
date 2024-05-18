@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sitio modelo de video juegos y consolas, diseñado para el trabajo practico frontend del programa Codo a codo.">
+    <meta name="author" content="Grupo10">
+    <meta name="keywords" content="Video juegos, Consolas, frontend">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Video juegos y Consolas</h1>
+        <nav>
+            <ul>                
+                <li><a href="../index.html">Inicio</a></li>                
+                <li><a href="../Playstation/index.html">Playstation</a></li>                
+                <li><a href="../Nintendo/index.html">Nintendo</a></li>
+                <li><a href="../Computadora/index.html">PC</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="contenedor">
+        <section>
+            <h2>Registrate</h2>
+                <form id="formulario">
+                    <div class="divform">
+                        <fieldset class="text">
+                            <legend>Datos Personales</legend>
+                            <div>
+                                <p id="rtaForm"></p>
+                            </div>
+                            <div>
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" name="nombre" id="nombre">
+                            </div>
+                            <div>
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" name="apellido" id="apellido">
+                            </div>
+                            <div>
+                                <label for="edad">Edad: </label>
+                                <input type="text" name="edad" id="edad">
+                            </div>
+                            <div>
+                                <label for="email">Correo electronico:</label>
+                                <input type="email" name="email" id="email">
+                            </div>
+                            <div>
+                                <label for="contraseña">Contraseña</label>
+                                <input type="password" name="contraseña" id="contraseña">
+                            </div>
+                        </fieldset>
+                        <fieldset class="select">
+                            <legend>Queremos saber más de tus preferencias</legend>
+                            <h4>¿Te gustaria recibir información de futuras actualizaciones? Si es asi: </h4>  
+                            <label for="Dispositivos">Seleccione un Dispositivos</label>   
+                            <select name="Dispositivos" id="Dispositivos">
+                                <option value="selecciona">Selecciona un opción</option>
+                                <option value="Playstation">Playstation</option>
+                                <option value="Nintendo">Nintendo</option>
+                                <option value="Computadora">Computadora</option>
+                            </select>
+                            <h4>¿Cual de estos dirias que es tu preferido?</h4>
+                            
+                            <input type="radio" name="a" id="PC"><label for="PC">PC</label>                            
+                            
+                            <input type="radio" name="a" id="Nintendo"><label for="Nintendo">Nintendo</label>
+                            
+                            <input type="radio" name="a" id="Playstation"><label for="Playstation">Playstation</label>
+                            
+
+                                <h4>Si quiere, puede ingresar una imagen que nos ayude a mejorar nuestro catalogo de juegos o consoltas. solo en estos formatos: jpg, .png, .jpeg, .gif</h4>                                
+                                <input type="file" name="foto" id="foto" accept=".jpg,.png,.jpeg,.gif">
+
+                         </fieldset>
+                    </div>
+                <div class="divflexrow">
+                    <input type="submit" value="Enviar datos">
+                </div>          
+            </form>
+        </section>
+    </main>
+    <footer>
+        <nav>
+            <ul>                
+                <li><a href="../index.html">Inicio</a></li>                
+                <li><a href="../Playstation/index.html">Playstation</a></li>                
+                <li><a href="../Nintendo/index.html">Nintendo</a></li>
+                <li><a href="../Computadora/index.html">PC</a></li>
+            </ul>
+        </nav>
+        <a href="../index.html">Volver a pagina princiapl</a>
+        <p>Sitio sin licencia - 2024 - Grupo 10, comisión 24164.</p>
+    </footer>
+    <script src="./js/validar_form.js"></script>
+</body>
+</html>

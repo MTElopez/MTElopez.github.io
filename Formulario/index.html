@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio modelo de video juegos y consolas, diseñado para el trabajo practico frontend del programa Codo a codo.">
+    <meta name="description"
+        content="Sitio modelo de video juegos y consolas, diseñado para el trabajo practico frontend del programa Codo a codo.">
     <meta name="author" content="Grupo10">
     <meta name="keywords" content="Video juegos, Consolas, frontend">
     <title>Formulario</title>
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
+
 <body>
-    <header>
-        <h1>Video juegos y Consolas</h1>
-        <nav>
-            <ul>                
-                <li><a href="../index.html">Inicio</a></li>                
-                <li><a href="../Playstation/index.html">Playstation</a></li>                
-                <li><a href="../Nintendo/index.html">Nintendo</a></li>
-                <li><a href="../Computadora/index.html">PC</a></li>
-            </ul>
-        </nav>
+    <header class="box box1">
+        
+        <div class="header1">
+            <h1>Formulario de Registro</h1>
+        </div>
+        <div>
+            <nav>
+                <ul class="nav">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../Nintendo/index.html">Nintendo</a></li>
+                    <li><a href="../Computadora/index.html">PC</a></li>
+                    <li><a href="../Playstation/index.html">Play Station</a></li>
+                     </ul>
+            </nav>
+        </div>
     </header>
     <main class="contenedor">
         <section>
             <h2>Registrate</h2>
-                <form id="formulario">
-                    <div class="divform">
-                        <fieldset class="text">
-                            <legend>Datos Personales</legend>
-                            <div>
-                                <p id="rtaForm"></p>
-                            </div>
-                            <div>
+            <form id="formulario" autocomplete="off">
+                <div class="divform">
+                    <fieldset class="text">
+                        <legend>Datos Personales</legend>
+                        <div class="bg1">
+                            <div class="etiqueta1">
                                 <label for="nombre">Nombre:</label>
                                 <input type="text" name="nombre" id="nombre">
                             </div>
-                            <div>
+                            <div class="etiqueta1">
                                 <label for="apellido">Apellido:</label>
                                 <input type="text" name="apellido" id="apellido">
                             </div>
-                            <div>
+                            <div class="etiqueta1">
                                 <label for="edad">Edad: </label>
-                                <input type="text" name="edad" id="edad">
+                                <input type="number" name="edad" id="edad">
                             </div>
-                            <div>
+                            <div class="etiqueta1">
                                 <label for="email">Correo electronico:</label>
                                 <input type="email" name="email" id="email">
                             </div>
-                            <div>
+                            <div class="etiqueta1">
                                 <label for="contraseña">Contraseña</label>
                                 <input type="password" name="contraseña" id="contraseña">
                             </div>
-                        </fieldset>
-                        <fieldset class="select">
-                            <legend>Queremos saber más de tus preferencias</legend>
-                            <h4>¿Te gustaria recibir información de futuras actualizaciones? Si es asi: </h4>  
-                            <label for="Dispositivos">Seleccione un Dispositivos</label>   
+                        </div>
+                    </fieldset>
+                    <fieldset class="select">
+                        <legend>Queremos saber más de tus preferencias</legend>
+                        <div>
+                            <h4>¿Te gustaría recibir actualizaciones? Si es asi: </h4>
+
+                            <label for="Dispositivos">Seleccione un Dispositivos</label>
                             <select name="Dispositivos" id="Dispositivos">
                                 <option value="selecciona">Selecciona un opción</option>
                                 <option value="Playstation">Playstation</option>
@@ -62,37 +72,51 @@
                                 <option value="Computadora">Computadora</option>
                             </select>
                             <h4>¿Cual de estos dirias que es tu preferido?</h4>
-                            
-                            <input type="radio" name="a" id="PC"><label for="PC">PC</label>                            
-                            
-                            <input type="radio" name="a" id="Nintendo"><label for="Nintendo">Nintendo</label>
-                            
-                            <input type="radio" name="a" id="Playstation"><label for="Playstation">Playstation</label>
-                            
+                            <div class="favoritos">
 
-                                <h4>Si quiere, puede ingresar una imagen que nos ayude a mejorar nuestro catalogo de juegos o consoltas. solo en estos formatos: jpg, .png, .jpeg, .gif</h4>                                
+                                <input type="radio" name="a" id="PC"><label for="PC">PC</label>
+
+                                <input type="radio" name="a" id="Nintendo"><label for="Nintendo">Nintendo</label>
+
+                                <input type="radio" name="a" id="Playstation"><label
+                                    for="Playstation">Playstation</label>
+
+                            </div>
+
+                            <h4>Si quiere, puede ingresar una imagen que nos ayude a mejorar nuestro catálogo de juegos
+                                o
+                                consoltas. solo en estos formatos: jpg, .png, .jpeg, .gif</h4>
+                            <div class="divflexrow">
                                 <input type="file" name="foto" id="foto" accept=".jpg,.png,.jpeg,.gif">
-
-                         </fieldset>
-                    </div>
-                <div class="divflexrow">
+                            </div>
+                        </div>
+                        <div>
+                            <p id="rtaForm"></p>
+                        </div>
+                        <div class="divflexrow">
+                            <input type="submit" value="Enviar datos">
+                        </div>
+                    </fieldset>
+                </div>
+                <!-- <div class="divflexrow">
                     <input type="submit" value="Enviar datos">
-                </div>          
+                </div> -->
             </form>
         </section>
     </main>
     <footer>
         <nav>
-            <ul>                
-                <li><a href="../index.html">Inicio</a></li>                
-                <li><a href="../Playstation/index.html">Playstation</a></li>                
-                <li><a href="../Nintendo/index.html">Nintendo</a></li>
-                <li><a href="../Computadora/index.html">PC</a></li>
-            </ul>
+            <ul class="navfot">
+                <li><a href="../index.html"><img src="img/webpagehome_85808.png" alt="inicio"></a></li>
+                <li><a target="_blank" href="https://www.facebook.com/NintendoLatAm"><img src="img/iconfinder-social-media-applications-1facebook-4102573_113807.png" alt="Facebook Nintendo"></a></li>
+                <li><a target="_blank" href="https://x.com/EpicGames"><img src="img/twitter_x_new_logo_square_x_icon_256075.png" alt="X Epic Games"></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/playstation_la"><img src="img/iconfinder-social-media-applications-3instagram-4102579_113804.png" alt="Instagram Playstation"></a></li>
+                 </ul>
         </nav>
-        <a href="../index.html">Volver a pagina princiapl</a>
+        
         <p>Sitio sin licencia - 2024 - Grupo 10, comisión 24164.</p>
     </footer>
     <script src="./js/validar_form.js"></script>
 </body>
+
 </html>

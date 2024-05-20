@@ -71,7 +71,7 @@ nav a:hover {
 main {
     text-align: center;
     margin: 3%;
-    background-color: #909eb4; /* Color de fondo original */
+    background: linear-gradient(#3d0c5e, #3dc4db); /* Color de fondo original */
     border: 3px solid white;
     padding: 40px;
     border-radius: 0px 75px 0px 75px;

@@ -1,27 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family= Poetsen+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poetsen+One&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sedgwick+Ave+Display&display=swap');
 
 * { 
-   font-family: "Plus Jakarta Sans", sans-serif; 
-   font-optical-sizing: auto; 
-   font-weight: 500; 
-   font-style: normal ;
-   font-variation-settings: "wdth" 100 ;
+    font-family: "Plus Jakarta Sans", sans-serif; 
+    font-weight: 500; 
+    font-style: normal ;
 }
 
 body {
     margin: 0;
     padding: 0;
-    background-color: #7547f4;
+    background-color: #93a0a8;
 }
 
 header, footer {
-    background-color: #000000; 
+    background: linear-gradient(to bottom, #74839e, #0c1021); 
     position: relative;
     text-align: center;
     padding: 20px;
-    color: #fff;
-
-   
+    color: #fff;   
 }
 
 header img {
@@ -36,53 +32,54 @@ header img {
     text-align: center;
 }
 
-
-p {
-    margin-top: 10px; 
+.p {
+    margin-top: 20px; 
     max-width: 900px; 
     margin-left: auto; 
     margin-right: auto;
-    text-align: justify;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
 }
 nav ul {
     list-style: none;
-    padding: 4;
-    margin: 2;
+    padding: 0; 
+    margin: 0; 
 }
 
 nav li {
     display: inline;
-    margin-right: 100px; 
+    margin-left: 10%;
+    margin-right: 10%; 
 }
 
 nav a {
+    text-align: center;
     text-decoration: none;
-    color: #7547f4;
-}
-
-nav a + a {
-    margin-left: 50px; /*espacio entre los enlaces */
-  }
-  
-  nav a:hover {
-    color: #ffffff; /*cambia el color al pasar el ratón por encima */
-  }
-
-nav a:hover img {
-    filter: brightness(1.6); 
+    color: #ffffff;
 }
 
 nav a:hover {
-    color: #ffffff; /*cambia el color al pasar el ratón*/
+    color: #2e2524; /*cambiar el color al pasar el cursor*/
+}
+
+nav a img {
+    display: inline-block; 
+    margin-left: 6%;
+    margin-right: 6%;
+} 
+
+nav a:hover img {
+    filter: brightness(1.6); /*clarar la imagen al pasar el cursor*/
 }
 
 .imgArticulo img {
-    max-width: 60%; 
+    max-width: 100%; /*asegurar que las imágenes se ajusten al contenedor*/
     height: auto; 
     display: block; 
     margin: 0 auto; 
-    max-height: 40px; 
-    justify-content: space-around;
 }
 
 .grid-container {
@@ -90,12 +87,11 @@ nav a:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     padding: 20px;
-    background-color: #7547f4;
+    background-color: #93a0a8;
 }
 
 .grid-item {
-
-    background-color: #000202;
+    background: linear-gradient(to bottom, #74839e, #0c1021); /*degradado de color*/
     padding: 20px;
     border: 1px solid #ccc;
     display: flex; 
@@ -107,28 +103,258 @@ nav a:hover {
     border-radius: 30px;
 }
 
+.grid-item img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+}
 
-.login-link {
+section a {
+    text-decoration: none;  
+    color: rgb(255, 255, 255);
+}
+
+section a:hover {
+    color: #474b50;
+    transform: scale(1.1); /*aumenta el tamaño al pasar el mouse*/ 
+}
+
+.topright{
     position: absolute;
+    text-align: right;
     top: 20px;
     right: 20px;
+    display:flex;
+    
 }
 
-.login-link a {
-    color: #fff;
+.topright a {
     text-decoration: none;
+    color: #2e2524;
 }
 
+.registro-box {
+    display: inline-block;
+    background-color: #edeeef;
+    color: #2e2524;
+    text-decoration: none;
+    padding: 7px 9px;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: background-color 0.3s, transform 0.3s; /*transición de fondo y transformación*/
+}
+
+.registro-box:hover {
+    background-color: #ccc; /*cambia el color de fondo al pasar el mouse*/
+    transform: scale(1.1); /*aumenta el tamaño al pasar el mouse*/
+}
 
 footer p {
     text-align: center;
 }
+
 .logoFijo {
-    margin: 1%;
     width: 5rem;
     position: fixed;
     bottom: 5rem;
-    right: 2%;
-    z-index: 20;    
+    right: 0%;
+    z-index: 20;
     border-radius: 50%;
 }
+
+
+section {
+    position: relative;
+    overflow: hidden; 
+    background-color: #6e7494; 
+}
+
+section img {
+    width: 100%; 
+    height: auto; 
+    display: block; 
+    transition: transform 0.3s; 
+}
+
+section:hover img {
+    transform: scale(1.2); /*aumentar el tamaño de la imagen al pasar el mouse*/
+}
+
+h1,h2,h3 {
+    text-align: center;
+}
+
+iframe {
+    display: block;
+    margin: 0 auto;
+    width: 300px; 
+    height: 200px; 
+}
+
+p {
+    text-align: center;
+    margin: 40px 20px; 
+}
+
+.img-container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;    
+}
+
+footer a:hover {
+    color: #2e2524;
+}
+ footer p {
+    text-align: center;
+    margin-bottom: 1%;
+    margin-top: 1%   
+}
+
+.header-con-imagen1 {
+    background-image: url(./img2/imgprincipalplay.png); 
+    background-size: cover; /*a imagen cubre todo el encabezado*/
+    background-position-y: 20%;
+    padding: 150px 0; 
+    text-align: center; /* Alinea el contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+
+.header-con-imagen2 {
+    background-image: url(./img2/finalfantasy.png); 
+    background-size: cover; /*a imagen cubre todo el encabezado*/
+    background-position-y: 20%;
+    padding: 150px 0; 
+    text-align: center; /* Alinea el contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+
+.header-con-imagen3 {
+    background-image: url(./img2/residentevil.png); 
+    background-size: cover; /*a imagen cubre todo el encabezado*/
+    background-position-y: 20%;
+    padding: 150px 0; 
+    text-align: center; /* Alinea el contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+.header-con-imagen4 {
+    background-image: url(./img2/assesin.png); 
+    background-size: cover; /*a imagen cubre todo el encabezado*/
+    background-position-y: 20%;
+    padding: 150px 0; 
+    text-align: center; /* Alinea el contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+.header-con-imagen5 {
+    background-image: url(./img2/uncharted.png); 
+    background-size: cover; /*a imagen cubre todo el encabezado*/
+    background-position-y: 20%;
+    padding: 150px 0; 
+    text-align: center; /* Alinea el contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+.header-con-imagen6 {
+    background-image: url(./img2/spiderman.png); 
+    background-size: cover; /*a imagen cubre todo el encabezado*/
+    background-position-y: 20%;
+    padding: 150px 0; 
+    text-align: center; /* Alinea el contenido al centro */
+    color: #fff; /* Color del texto */
+}
+
+
+.header-con-imagen1, .header-con-imagen2, .header-con-imagen3, .header-con-imagen4, .header-con-imagen5, .header-con-imagen6, h1 {
+    margin-top: 20px; /* Espaciado superior para el título */
+}
+
+.header-con-imagen1, .header-con-imagen2, .header-con-imagen3, .header-con-imagen4, .header-con-imagen5, .header-con-imagen6 nav {
+    margin-top: 20px; /* Espaciado superior para la navegación */
+}
+
+.header-con-imagen1, .header-con-imagen2, .header-con-imagen3, .header-con-imagen4, .header-con-imagen5, .header-con-imagen6 nav a {
+    margin: 0 10px; /* Espaciado entre los elementos de navegación */
+}
+
+
+ul {
+    list-style-type: none;
+    margin-left: 20px;
+    padding-left: 0; 
+}
+li {
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*Para pantallas pequeñas (móviles) */
+@media screen and (max-width: 576px) {
+    header img {
+        margin-right: 0; /*elimina margen derecho*/
+    }
+    
+    nav li {
+        margin-left: 0; /*elimina margen izquierdo*/
+        margin-right: 0; /*elimina margen derecho*/
+    }
+    
+    .grid-container {
+        grid-template-columns: 1fr; /*cambia a una sola columna*/
+    }
+    
+    .login-box, .registro-box {
+        display: block; /*Cambiar a bloque para todo el ancho*/
+        margin: 10px auto; /*margen superior e inferior de 10px, centrado horizontalmente*/
+    }
+    
+    iframe {
+        width: 80%; /*reducir el ancho del iframe*/
+    }
+}
+
+/*Para pantallas medianas (tabletas)*/
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    header img {
+        margin-right: 50px; /*aumentar el margen derecho*/
+    }
+    
+    nav li {
+        margin-left: 20px; /*aumentar el margen izquierdo*/
+        margin-right: 20px; /*aumentar el margen derecho*/
+    }
+    
+    .login-box, .registro-box {
+        margin: 10px; /*margen de 10px en todos los lados*/
+    }
+    
+    section img {
+        max-width: 90%; /*reducir el ancho máximo de la imagen*/
+    }
+}
+
+/*Para pantallas grandes (escritorios)*/
+@media screen and (min-width: 993px) {
+    header img {
+        margin-right: 80px; /*restaurar margen derecho original*/
+    }
+    
+    nav li {
+        margin-left: 10%; /*restaura margen izquierdo original*/
+        margin-right: 10%; /*restaurar margen derecho original*/
+    }
+    
+    section img {
+        max-width: 100%; /*restaurar ancho máximo original*/
+    }
+}
+
+

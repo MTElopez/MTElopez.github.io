@@ -71,7 +71,7 @@ nav a:hover {
 main {
     text-align: center;
     margin: 3%;
-    background-color: #909eb4; /* Color de fondo original */
+    background: linear-gradient(#3d0c54,#3dc4db); /* Color de fondo original */
     border: 3px solid white;
     padding: 40px;
     border-radius: 0px 75px 0px 75px;
@@ -123,7 +123,7 @@ div {
 }
 
 .registro-box {
-    background-color: #765866;
+    background: linear-gradient(#3d0c54,#3dc4db);
     padding: 10px 20px;
     border-radius: 0px 15px 0px 15px;
     margin-top: 2px;
@@ -146,7 +146,7 @@ div {
 
 
 footer {
-    background-color: #765866;
+    background: linear-gradient(#3d0c54,#3dc4db);
     color: white;
     padding: 20px;
     text-align: center;
@@ -168,7 +168,7 @@ footer nav ul li {
 
 footer nav ul li a {
     text-decoration: none;
-    color: #d0aab4;
+    color: white;
     transition: color 0.3s;
 }
 

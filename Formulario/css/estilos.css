@@ -160,7 +160,11 @@ a {
   justify-content: center;
 }
 .navfot li:hover {
-  background-color: rgb(30, 168, 233);
+  background-color: rgb(81, 179, 224);
+}
+#boton1:active {
+  background-color: #b1ced6; /* Cambiamos el color de fondo cuando se presiona el botón */
+  border-color: #31c8ee; /* Cambiamos el color del borde cuando se presiona el botón */
 }
 footer p {
   color: rgb(255, 255, 255);

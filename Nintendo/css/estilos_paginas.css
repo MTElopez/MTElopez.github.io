@@ -1,0 +1,96 @@
+.historia {
+    font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: rgb(22, 167, 224);
+  }
+  .historia h2 {
+    color: rgb(247, 7, 7);
+    text-shadow: 2px 2px black;
+  }
+  .buscados  {
+    font-family: "Kay Pho Du", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  background-color: black;
+  }
+  .buscados img {
+    box-shadow: 5px 5px white;
+    border-radius: 10px;
+  }
+  
+  .buscados h1{
+    text-shadow: 2px 2px black;
+  }
+  .buscados h2 {
+    text-shadow: 2px 2px black;
+  }
+  .buscados {
+    background: linear-gradient(to right, #0c97e7, #ff0000, #088cb4);
+    background-size: 200% 200%;
+    animation: animarDegradado 5s linear infinite;
+  }
+  
+  @keyframes animarDegradado {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .mejores {
+    font-family: "Kay Pho Du", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: aliceblue;
+  }
+  .mejores h1, h2, h3 {
+    text-shadow: 2px 2px black;
+  }
+  .mejores {
+    background: linear-gradient(to left, #0c97e7, #ff0000, #088cb4);
+    background-size: 200% 200%;
+    animation: animarDegradadob 5s linear infinite;
+  }
+  
+  @keyframes animarDegradadob {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  .lider{
+    color: aliceblue;
+  }
+  .lider h1, h2, h3 {
+    text-align: center;
+    text-shadow: 2px 2px black;
+  }
+ .alinea{
+  text-align: center;
+ }
+ .alinea img{
+  box-shadow: 5px 5px white;
+  margin: auto;
+ }
+ .koji {
+  color: aliceblue;
+  text-shadow: 2px 2px rgb(248, 5, 5);
+  background-image: url(../img/music.jpg);
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+ }
+ .koji H2 {
+  text-shadow: 2px 2px rgb(248, 5, 5);
+ }

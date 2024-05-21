@@ -6,11 +6,11 @@
 .container{
   width: 100%;
   
-  background-color: coral;
+  background-color: rgb(255, 0, 0);
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 75px, 300px, 200px, 100px;
-  grid-gap: 5px;
+  grid-gap: 10px;
   margin: auto;
 }
 .container .box {
@@ -54,8 +54,6 @@ header{
   width: 90px;
   height: 10px;
   padding: 10px;
-  /*background-color: rgb(212, 206, 206);*/
-  /*background-image: linear-gradient(to bottom right, grey, white);*/
   margin: 5px;
   text-align: center;
   align-content: center;
@@ -66,17 +64,19 @@ header{
 
 }
 .nav li:hover{
-background-color: gold;
-
-
+/*background-color: rgb(255, 0, 0);*/
+background-image: radial-gradient(circle, red, rgb(75, 85, 231), rgb(255, 0, 0));
 }
 .box2{
   background-color: blue;
   grid-column: 1 / 2;
   grid-row: 2 / 4;
   text-align: center;
+  margin-left: 10px;
  }
- 
+ .box2:hover{
+  background-color: rgb(7, 9, 151);
+ }
  
  .menu2{
   height: 100%;
@@ -89,13 +89,15 @@ background-color: gold;
   }
   .menu2 li img {
     border-radius: 10px;
-    margin-top: 40px;
+    margin-top: 55px;
   }
   
 .box3{
-  background-color: rgb(104, 221, 26);
+  /*background-color: rgb(104, 221, 26);*/
   grid-column: 2 / 11;
   grid-row: 2 / 4;
+  
+  
 }
 
 .box3 h2{
@@ -108,9 +110,10 @@ background-color: gold;
 
 
 .box4{
-  background-color: darkgreen;
+  background-color: blue;
   grid-column: 11 / 13;
   grid-row: 2 / 4;
+  margin-right: 10px;
 }
 .header2{
   margin-left: 0px;
@@ -124,7 +127,7 @@ a{
 }
 .box4 .aside_1{
   position: relative;
-    width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    width: 100%; 
     padding-bottom: 56.25%;
 }
 .aside_1 iframe {
@@ -140,6 +143,12 @@ a{
 .aside_2 audio{
   width: 100%;
 }
+.aside_2 p{
+  color: aliceblue;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #db1010; 
+}
 .aside_3{
   width: 100%;
   position: relative;
@@ -149,9 +158,16 @@ a{
   width: 100%;
   opacity: .4;
 }
+.aside_3 img:hover{
+  width: 100%;
+  opacity: 1;
+}
 div.aside_3a{
   position: absolute;
   top: 50%;
+}
+.aside_3a H2{
+  text-shadow: 2px 2px rgb(255, 0, 0);
 }
 .sec1 { 
   display: flex;
@@ -198,7 +214,7 @@ footer{
   grid-column: 1 / -1;
   grid-row: 5 / 6;
   height: 80px;
-  background: black;
+  background: rgb(177, 46, 46);
   
 }
 .nav_footer{
@@ -210,9 +226,7 @@ footer{
 .nav_footer li{
   width: 90px;
   height: 10px;
-  padding: 10px;
-  /*background-color: rgb(212, 206, 206);*/
-  /*background-image: linear-gradient(to bottom right, grey, white);*/
+  padding: 20px;
   margin: 5px;
   text-align: center;
   align-content: center;
@@ -223,7 +237,7 @@ footer{
 
 }
 .nav_footer li:hover{
-background-color: rgba(0, 38, 255, 0.349);
+background-color: rgb(49, 63, 143);
 
 
 }
@@ -236,3 +250,41 @@ background-color: rgba(0, 38, 255, 0.349);
 .secc .imgz {
   width: 100%;
 }
+.header3 h1 {
+  font-family: "Montserrat Alternates", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: red;
+  text-shadow: 3px 3px black;
+}
+#cambio_color {
+  font-size: 36px;
+  animation: changeColor 4s infinite; /* Define la animación */
+}
+@keyframes changeColor {
+  0% { color: red; }
+  25% { color: blue; }
+  50% { color: rgb(255, 255, 255); }
+  75% { color: rgb(6, 240, 57); }
+  100% { color: purple; }
+   }
+   .secc h2{
+    color: #db1010;
+    text-shadow: 3px 3px black;
+    
+    padding: 10px;
+    /*background-color: rgb(212, 206, 206);*/
+    /*background-image: linear-gradient(to bottom right, grey, white);*/
+    margin: 50px;
+    text-align: center;
+    align-content: center;
+    color: aliceblue;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px;
+   }
+   .secc h2:hover {
+    color: rgba(255, 0, 0, 0.733);
+   }
+
+   
+   

@@ -285,6 +285,12 @@ background-color: rgb(49, 63, 143);
    .secc h2:hover {
     color: rgba(255, 0, 0, 0.733);
    }
+   .imagenes_section img {
+    margin: auto;
+    display: block;
+    box-shadow: 5px 5px rgba(2, 1, 1, 0.651);
+    margin-bottom: 10px;
+}
 
    
    
